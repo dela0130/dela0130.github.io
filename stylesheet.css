@@ -1,6 +1,6 @@
 article {
     margin: 40px; 
-    max-width: 80%;
+    max-width: 50%;
     background-color: rgb(218, 255, 218);
     padding: 40px;
     border-radius: 25px;
@@ -16,8 +16,10 @@ header {
     border-radius: 25px;
 
 }
-p {
+p, ol {
     background-color: white;
     padding: 40px;
     border-radius: 25px;
+
+    
 }
