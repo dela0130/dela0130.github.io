@@ -1,0 +1,63 @@
+/* I created this style sheet because abbreviation elements have ugly default styling. I added a little more styling to make it my own. Most of what I found was through experimentation. I'd like to know how to make it look better on mobile. This styling is barely responsive. I also look forward to learning how to import new fonts. I almost Googled this, but I'll leave it for the future.*/
+
+
+article {
+    margin: 40px; 
+    max-width: 80%;
+    background-color: rgb(218, 255, 218);
+    padding: 40px;
+    border-radius: 25px;
+}
+
+p {
+    background-color: white;
+    padding: 40px;
+    border-radius: 25px;
+}
+
+blockquote {
+    /* I wanted the quote to not look like a regular paragraph */
+    background-color: darkgreen;
+    padding: 80px;
+    border-radius: 25px;
+    color: white;
+    font-size: x-large;
+}
+
+cite {
+    /* It was difficult finding a way for the citation to stand out from the block quote. I had trouble with the padding covering the blockquote. I experimented position:absolute, which was really tough to get right. So I eventually discovered that making the cite font smaller than the block quote corrected the padding issue. This part is definitely the most problematic area of styling. Any feedback would be welcome!*/
+    color: black;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: small;
+}
+
+header {
+    text-align: "center";
+    font-size: 4em;
+    background-color: darkgreen;
+    padding: 80px;
+    color:white;
+    font-weight: bolder;
+    min-width: 200px;
+    border-radius: 25px;
+
+}
+
+abbr {
+    cursor: context-menu;
+    text-decoration: underline;
+    text-decoration-color: rgb(87, 87, 87);
+    text-decoration-thickness: 2px;
+    /* Found out how to prevent the line from being interrupted by letters with a 'decender' likw "p" or "q" */
+    text-decoration-skip-ink: none;
+    text-decoration-style: wavy;
+    
+}
+
+abbr:hover {
+    font-size: large;
+    text-decoration-line: none;
+
+}
