@@ -34,7 +34,7 @@ cite {
 
 header {
     text-align: "center";
-    /* I'm pretty sure 'em' is a great unit of measurement. */
+    /* I'm pretty sure 'em' is a very responsive unit of measurement. */
     font-size: 4em;
     background-color: darkgreen;
     padding: 80px;
