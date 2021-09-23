@@ -1,6 +1,5 @@
-/* I created this style sheet because abbreviation elements have ugly default styling. I added a little more styling to make it my own. Most of what I found was through experimentation. I'd like to know how to make it look better on mobile. This styling is barely responsive. I also look forward to learning how to import new fonts. I almost Googled this, but I'll leave it for the future.*/
+/* I created this style sheet because abbreviation elements have ugly default styling. I added a little more styling to make it my own. Most of what I found was through experimentation. I'd like to know how to make it look better on mobile. This styling is barely responsive. I also look forward to learning how to import new fonts. I almost Googled this, but I'll leave it for the future. I got the styling in here from w3schools.com */
 
-/* This is article or p styling was just default styling I saw when I was a technical writer. */
 article {
     margin: 40px; 
     max-width: 80%;
@@ -44,7 +43,7 @@ header {
     border-radius: 25px;
 
 }
-/* I didn't like the default transition. I wanted to make sure users checked out the abbreviation, so I changed the cursor. */
+/* I didn't like the default abbreviation styling. I wanted to make sure users checked out the abbreviation, so I changed the cursor. */
 abbr {
     cursor: context-menu;
     text-decoration: underline;
