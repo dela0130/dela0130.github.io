@@ -1,0 +1,24 @@
+article {
+    margin: 40px; 
+    max-width: 80%;
+    background-color: rgb(218, 255, 218);
+    padding: 40px;
+    border-radius: 25px;
+}
+header {
+    text-align: "center";
+    /* I'm pretty sure 'em' is a great unit of measurement. */
+    font-size: 4em;
+    background-color: darkgreen;
+    padding: 80px;
+    color:white;
+    font-weight: bolder;
+    min-width: 200px;
+    border-radius: 25px;
+
+}
+p {
+    background-color: white;
+    padding: 40px;
+    border-radius: 25px;
+}
