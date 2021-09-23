@@ -1,6 +1,6 @@
 /* I created this style sheet because abbreviation elements have ugly default styling. I added a little more styling to make it my own. Most of what I found was through experimentation. I'd like to know how to make it look better on mobile. This styling is barely responsive. I also look forward to learning how to import new fonts. I almost Googled this, but I'll leave it for the future.*/
 
-
+/* This is article or p styling was just default styling I saw when I was a technical writer. */
 article {
     margin: 40px; 
     max-width: 80%;
@@ -16,16 +16,16 @@ p {
 }
 
 blockquote {
-    /* I wanted the quote to not look like a regular paragraph */
+    /* I wanted the quote to not look like a regular paragraph. */
     background-color: darkgreen;
     padding: 80px;
     border-radius: 25px;
     color: white;
-    font-size: x-large;
+    font-size: xxx-large;
 }
 
 cite {
-    /* It was difficult finding a way for the citation to stand out from the block quote. I had trouble with the padding covering the blockquote. I experimented position:absolute, which was really tough to get right. So I eventually discovered that making the cite font smaller than the block quote corrected the padding issue. This part is definitely the most problematic area of styling. Any feedback would be welcome!*/
+    /* It was difficult finding a way for the citation to stand out from the block quote. I had trouble with the padding on the cite element covering the quote. I experimented with position:absolute, which was really tough to get right. So I eventually discovered that making the cite font smaller than the block quote corrected the padding issue. This part is definitely the most problematic area of styling. Any feedback would be welcome!*/
     color: black;
     padding: 5px;
     background-color: white;
@@ -44,20 +44,25 @@ header {
     border-radius: 25px;
 
 }
-
+/* I didn't like the default transition. I wanted to make sure users checked out the abbreviation, so I changed the cursor. */
 abbr {
     cursor: context-menu;
     text-decoration: underline;
-    text-decoration-color: rgb(87, 87, 87);
-    text-decoration-thickness: 2px;
+    text-decoration-color: limegreen;
     /* Found out how to prevent the line from being interrupted by letters with a 'decender' likw "p" or "q" */
+    text-decoration-thickness: 5px;
     text-decoration-skip-ink: none;
-    text-decoration-style: wavy;
     
 }
-
+/* I found that people could still miss the tooltip, so I found a way to make the abbreviation respond to a hover by transitioning slowly. This way, hopefully the user will wait long enough for the tooltip.*/
 abbr:hover {
-    font-size: large;
+    /* I found these transitions here: https://stackoverflow.com/questions/11164567/is-there-a-way-to-slow-down-the-hover-effect */
+    -webkit-transition: all 3000ms ease;
+    -moz-transition: all 3000ms ease;
+    -ms-transition: all 3000ms ease;
+    -o-transition: all 3000ms ease;
+    transition: all 3000ms ease;
+    font-size: x-large;
     text-decoration-line: none;
 
 }
