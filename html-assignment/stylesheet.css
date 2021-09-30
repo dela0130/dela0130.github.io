@@ -1,5 +1,13 @@
 /* I created this style sheet because abbreviation elements have ugly default styling. I added a little more styling to make it my own. Most of what I found was through experimentation. I'd like to know how to make it look better on mobile. This styling is barely responsive. I also look forward to learning how to import new fonts. I almost Googled this, but I'll leave it for the future. I got the styling in here from w3schools.com */
 
+nav{
+    /* I couldn't figure out how to override the default link styling. I'm sure I could figure it out after enough Googling, but I don't have the time. */
+    margin: 25px;
+    font-size: xx-large;
+    text-decoration: none; 
+    /* ^This does nothing because the default styling is overriding it */
+}
+
 article {
     margin: 40px; 
     max-width: 80%;
