@@ -1,11 +1,64 @@
-/* I created this style sheet because abbreviation elements have ugly default styling. I added a little more styling to make it my own. Most of what I found was through experimentation. I'd like to know how to make it look better on mobile. This styling is barely responsive. I also look forward to learning how to import new fonts. I almost Googled this, but I'll leave it for the future. I got the styling in here from w3schools.com */
+
+/* Inheritance - target the body tag to change the font family and increase the font size to 18px */
+body{
+font-family: 'Courier New', Courier, monospace;
+font-size: 18px;
+}
+/* Select multiple elements - select both header and footer elements and add the same background colour */
+header, footer {
+    text-align: center;
+    font-size: 2em;
+    background-color: darkgreen;
+    padding: 80px;
+    font-weight: bolder;
+    min-width: 200px;
+    border-radius: 25px;
+
+}
+/* Class selector - add a class of site-title to the main heading of the site and select the class in CSS to change the colour of text of the heading */
+.site-title{
+    color:white;
+}
+/* Id selector - add an id my-image to your image and select the id in CSS to add a box-shadow with 0 horizontal and vertical placement, 2px of the blur, 1px of the spread and black colour */
+#my-image{
+    box-shadow: 0 0 2px 1px black ;
+}
+/* Replace the bullets from the list of hobbies with squares
+ */
+li{
+    list-style-type: square;
+}
+/* Using the nth-child selector - add a background to the odd list items in the hobby list */
+li:nth-child(2n-1){
+    background-color: white;
+}
+/* Styling the Navigation
+Remove the bullets from the unordered list in navigation (only if you have used the ul tag inside the nav tag) */
+
+
+nav a{
+    /* Remove the underline from the links */
+    text-decoration: none;
+    /* Add a background and border to the links */
+    background-color: darkgreen;
+    border: lime 2px solid;
+    color: white;
+    padding: .5em;
+    border-radius: 10px;
+}
+/* Change the background colour on hover or focus state of the links  */
+nav a:hover{
+    background-color: green;
+}
+
+nav a:active{
+    background-color: greenyellow;
+}
 
 nav{
-    /* I couldn't figure out how to override the default link styling. I'm sure I could figure it out after enough Googling, but I don't have the time. */
     margin: 25px;
     font-size: xx-large;
-    text-decoration: none; 
-    /* ^This does nothing because the default styling is overriding it */
+
 }
 
 article {
@@ -40,18 +93,9 @@ cite {
     font-size: small;
 }
 
-header {
-    text-align: "center";
-    /* I'm pretty sure 'em' is a very responsive unit of measurement. */
-    font-size: 4em;
-    background-color: darkgreen;
-    padding: 80px;
-    color:white;
-    font-weight: bolder;
-    min-width: 200px;
-    border-radius: 25px;
 
-}
+
+
 /* I didn't like the default abbreviation styling. I wanted to make sure users checked out the abbreviation, so I changed the cursor. */
 abbr {
     cursor: context-menu;
@@ -65,10 +109,7 @@ abbr {
 /* I found that people could still miss the tooltip, so I found a way to make the abbreviation respond to a hover by transitioning slowly. This way, hopefully the user will wait long enough for the tooltip.*/
 abbr:hover {
     /* I found these transitions here: https://stackoverflow.com/questions/11164567/is-there-a-way-to-slow-down-the-hover-effect */
-    -webkit-transition: all 3000ms ease;
-    -moz-transition: all 3000ms ease;
-    -ms-transition: all 3000ms ease;
-    -o-transition: all 3000ms ease;
+
     transition: all 3000ms ease;
     font-size: x-large;
     text-decoration-line: none;

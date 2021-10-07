@@ -6,10 +6,10 @@
             About C.K. Delahunt
         </title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-                <header>
+                <header class="site-title">
             <h1>Charles Kevin Delahunt</h1>
         </header>
         <nav><a href="notes.html">Notes</a>
@@ -19,7 +19,7 @@
         <article>
             <!-- I separated the about me section from the motivational quote section. I believe they can both stand an their own as independant content. -->
             <h2>About Me</h2>
-            <img src="images/ckdpic2.jpg" alt="Picture of Charles at dinner." width="250">
+            <img id="my-image" src="images/ckdpic2.jpg" alt="Picture of Charles at dinner." width="250">
             <h3>From dial-up to now</h3>
             <p>I remember dial-up internet with fondness. I was born in Ottawa and lived in a rural area with dial-up for nearly half my life. Loading a website with images took a minute or two and you needed LimeWire for music. Downloading videos was very time consuming.  I eventually moved into the city, first Ottawa, then Montreal. For the latter half of my life, I've been able to bask in very high-speed internet. Although I hated the 28.8 <abbr title="Kilobits Per Second">kbps</abbr> speeds, I'm glad it gave me perspective.</p>
             <h3>My first internet experience</h3>
@@ -34,6 +34,9 @@
                 <li>
                     Videogames, like Civ. 6 and Hell Let Loose.
                 </li>
+                <li>
+                    Running from nothing, just for fitness.
+                </li>
             </ol>
         </article>
         <article>
@@ -43,16 +46,16 @@
                 <blockquote>
                     "A somebody was once a nobody who wanted to and did."
                     
-                    <footer>
-                        <!-- Without this footer element, the citation doesn't display away from the quote. I see this as the footer of the blockquote element.-->
+                    <div>
+                        <!-- This used to be a footer, then a section element. I changed it from footer to a section element becuase a footer element was a block type element that helped to seperate the citation from the block quote. I understand now that a cite element is actually an inline type element. I changed it because having a footer here didn't make sense for styling. I changed it from a section, to a div because I was getting a warning when checking my code in validator.w3.org. Apparently sections need headers?-->
                         <cite>John Burroughs from <a href="https://www.brainyquote.com/quotes/john_burroughs_120947" target="_blank">brainyquote.com</a> </cite> 
-                    </footer>
+                    </div>
                 </blockquote>
             </article>
         </main>
         <footer>
             <hr>
-            <p>Copyright &copy; 2021 - Charles Kevin Delahunt</p>
+            Copyright &copy; 2021 - Charles Kevin Delahunt
         </footer>
     </body>
 </html>
