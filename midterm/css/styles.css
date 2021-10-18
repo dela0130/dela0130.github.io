@@ -1,0 +1,34 @@
+/* Center the page by using margin: 0 auto? */
+
+/* Header is styled like this: https://imdac.github.io/modules/css/css-position/css-position-examples.html */
+body {
+        max-width: 1024px;
+        margin: 0 auto;
+        background-color: #aad4cf;
+}
+
+article {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #D8E8E6;
+}
+
+header p {
+    max-width: 1024px;
+    height: 320px;
+    margin: 0 auto;
+    width: 100%;
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+header {
+    background-image: url("../images/lone-starfish-wide.jpg");
+    background-size: cover;
+    background-position: center center;
+    max-width: 1024px;
+    margin: 0 auto;
+
+}
+
