@@ -90,11 +90,10 @@ header p {
     height: 320px;
     margin: 0 auto;
     width: 100%;
-    font-size: xx-large;
+    font-size: 3rem;
     text-align: center;
     color: #fff;
     font-size: 4rem;
-    
     line-height: 450px;
 
 }
@@ -102,6 +101,10 @@ header p {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~
             My code - nav
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+nav ul {
+    padding-left: unset;
+}
 
 nav li{
     
@@ -114,9 +117,10 @@ nav li a{
     display: inline-block;
     text-decoration: none;
     color:#000;
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     text-align: center;
-    width: 32%;
+    width: 32.9%;
+   
     padding-top: 10px;
     margin-top: 3px;
     margin-bottom: 30px;
@@ -133,20 +137,20 @@ nav li a{
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 h1 {
-    font-size: 2.25rem;
+    font-size: 2.2rem;
     font-weight:500;
     margin: 10px;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight:500;
     margin: 10px;
-    padding-top: 10px;
+    padding: 10px 0;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight:500;
     margin: 10px 0;
     padding: 10px 0;
@@ -167,6 +171,7 @@ img {
     margin-right: 10px;
 }
 
+/* from https://www.w3schools.com/howto/howto_css_clearfix.asp */
 .clearfix::after {
     content: "";
     clear: both;
@@ -175,7 +180,7 @@ img {
 
 ul {
     list-style: disc;
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 
@@ -192,7 +197,7 @@ form {
 label {
     display: block;
     padding-bottom: 5px;
-    margin: 10px 0 5px;
+    margin: 17.5px 0 5px;
 }
 
 input {
@@ -210,12 +215,13 @@ textarea {
     display:unset;
     height:unset;
     width: unset;
+    margin-top: 10px;
 }
 
 .button {
     display: block;
     width: 55px;
-    height: 40px;
+    height: 38px;
     background-color: unset;
     margin-top: 20px;
     font-size: .75rem;
