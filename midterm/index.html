@@ -14,13 +14,13 @@
         <nav>
           <ul>
               <li>
-                  Home
+                  <a href="#">HOME</a>
+              </li>
+              <li class="centernav">
+                <a href="#">STORY</a>
               </li>
               <li>
-                  Story
-              </li>
-              <li>
-                  Contact
+                <a href="#">CONTACT</a>
               </li>
           </ul>
         </nav>
@@ -28,15 +28,15 @@
               <h1>
                   Life of a Starfish
               </h1>
-              <img src="images/lone-starfish.jpg" alt="An orange starfish on a bed of sand.">
+              <img class="clearfix" src="images/lone-starfish.jpg" alt="An orange starfish on a bed of sand.">
               <p>
                 Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
               </p>
           </section>
           <section>
-              <h1>
+              <h2>
                   Facts About Starfish
-              </h1>
+              </h2>
               <ul>
                   <li>
                     Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. 
@@ -53,9 +53,9 @@
               </ul>
           </section>
           <section>
-              <h1>
+              <h2>
                   Contact to learn more
-              </h1>
+              </h2>
               <form action="index.html" method="get">
                 <label for="name">Your Name</label>
                 <input id="name" type="text" name="interested_name">
@@ -63,20 +63,21 @@
                 <input id="email" type="email" name="interested_email">
                 <label for="message">Your Message</label>
                 <textarea id="message" name="interested_message"></textarea>
-                <h2>Would you like to visit the starfish?</h2>
-                <label for="yes">Yes</label>
-                <input type="radio" id="yes" name="Visit" value="1">
-                <label for="no">No</label>
-                <input type="radio" id="no" name="Visit" value="0">
-                <label for="maybe">Maybe</label>
-                <input type="radio" id="maybe" name="Visit" value=".5">
+                <h3>Would you like to visit the starfish?</h3>
+                <label class="radio" for="yes">Yes</label>
+                <input class="radio" type="radio" id="yes" name="Visit" value="1">
+                <label class="radio" for="no">No</label>
+                <input class="radio" type="radio" id="no" name="Visit" value="0">
+                <label class="radio" for="maybe">Maybe</label>
+                <input class="radio" type="radio" id="maybe" name="Visit" value=".5">
                 <!-- Going to need to style this, as the button seems to have all caps styling. -->
-                <button type="submit">Send</button>
+                <input class="button" type="submit" value="SEND">
               </form>
           </section>
-      </article>
-      <footer>
-          &copy; Lone Starfish.
-      </footer>
+      
+          <footer> &copy; Lone Starfish.
+        </footer>
+        </article>
+      
   </body>
 </html>

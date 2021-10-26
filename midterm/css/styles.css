@@ -1,16 +1,88 @@
-/* Center the page by using margin: 0 auto? */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~
+            CSS RESET
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~
+            My code - beginning
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 
 /* Header is styled like this: https://imdac.github.io/modules/css/css-position/css-position-examples.html */
+html {
+    font-size: 16px;
+}
+
 body {
         max-width: 1024px;
         margin: 0 auto;
         background-color: #aad4cf;
+        font-family: "Arial", Calibri, 'Trebuchet MS', sans-serif;
+        
 }
 
 article {
     max-width: 1024px;
     margin: 0 auto;
     background-color: #D8E8E6;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~
+            My code - header
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+header {
+    background-image: url("../images/lone-starfish-wide.jpg");
+    background-size: cover;
+    background-position: center center;
+    max-width: 1024px;
+    height: 340px;
+    margin: 0 auto;
+    
 }
 
 header p {
@@ -20,15 +92,139 @@ header p {
     width: 100%;
     font-size: xx-large;
     text-align: center;
+    color: #fff;
+    font-size: 4rem;
+    
+    line-height: 450px;
+
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~
+            My code - nav
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+nav li{
+    
+    margin: 0 auto;
+    display: inline;
+    
+}
+
+nav li a{
+    display: inline-block;
+    text-decoration: none;
+    color:#000;
+    font-size: 1.75rem;
+    text-align: center;
+    width: 32%;
+    padding-top: 10px;
+    margin-top: 3px;
+    margin-bottom: 30px;
+    
+}
+
+.centernav a {
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~
+            My code - content
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight:500;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight:500;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight:500;
+    margin: 10px 0;
+    padding: 10px 0;
 }
 
 
-header {
-    background-image: url("../images/lone-starfish-wide.jpg");
-    background-size: cover;
-    background-position: center center;
-    max-width: 1024px;
-    margin: 0 auto;
+p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 22px 12px;
+}
 
+img {
+    float:left;
+    width: 250px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+ul {
+    list-style: disc;
+    padding-left: 30px;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~
+            My code - form
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+form {
+    margin: 10px;
+    border: 1px black solid;
+    padding: 20px 20px;
+    font-size: 1.1rem;
+}
+label {
+    display: block;
+    padding-bottom: 5px;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    height: 1.5rem;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 6rem;
+}
+
+.radio {
+    display:unset;
+    height:unset;
+    width: unset;
+}
+
+.button {
+    display: block;
+    width: 55px;
+    height: 40px;
+    background-color: unset;
+    margin-top: 20px;
+    font-size: .75rem;
+    border-width: 1px;
+}
+
+footer{
+    text-align:right;
+    margin: 30px;
+    height: 50px;
 }
 
