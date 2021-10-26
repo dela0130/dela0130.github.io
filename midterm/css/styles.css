@@ -124,10 +124,9 @@ nav li a{
     padding-top: 10px;
     margin-top: 3px;
     margin-bottom: 30px;
-    
 }
 
-.centernav a {
+.centrenav a {
     border-left: 1px black solid;
     border-right: 1px black solid;
 }
