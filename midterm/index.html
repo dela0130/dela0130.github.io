@@ -7,54 +7,54 @@
   </head>
   <body>
     <!-- The body is divided into: header and article. -->
-      <header>
+    <header>
         <p>Lone Starfish</p>
         <img src="images/lone-starfish-wide1.jpg" alt="A banner of an orange starfish.">
-      </header>
+    </header>
+    <div class="container">
+    <!-- div class="container" was chosen over <article> because that should not contain <nav> or <footer>. <main> was also rejected because according to w3.schools "It should not contain any content that is repeated across documents such as sidebars, navigation links"-->
+      <nav>
+        <ul>
+          <li>
+              <a href="#">HOME</a>
+          </li>
+          <li class="centrenav">
+            <a href="#">STORY</a>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
       <article>
-        <!-- The article element is divided into: navigation, three sections and a footer. Since the footer is styled the same as the article, it's inside the main article. The first two sections are about starfishes and the last contains a contact form.-->
-        <nav>
-          <ul>
-              <li>
-                  <a href="#">HOME</a>
-              </li>
-              <li class="centrenav">
-                <a href="#">STORY</a>
-              </li>
-              <li>
-                <a href="#">CONTACT</a>
-              </li>
-          </ul>
-        </nav>
+      <!-- The article element is divided into two sections: an intro and facts about the starfish.-->
+        <h1>
+          Life of a Starfish
+        </h1>  
+        <img class="clearfix" src="images/lone-starfish.jpg" alt="An orange starfish on a bed of sand.">
+        <p>
+          Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
+        </p>
+        <h2>
+          Facts About Starfish
+        </h2>
+        <ul>
+          <li>
+            Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. 
+          </li>
+          <li>
+            Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
+          </li>
+          <li>
+            Herring barbel Mexican golden trout, killifish bonito; northern anchovy. 
+          </li>
+          <li>
+            Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
+          </li>
+        </ul>
+      </article>
           <section>
-              <h1>
-                  Life of a Starfish
-              </h1>
-              <img class="clearfix" src="images/lone-starfish.jpg" alt="An orange starfish on a bed of sand.">
-              <p>
-                Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
-              </p>
-          </section>
-          <section>
-              <h2>
-                  Facts About Starfish
-              </h2>
-              <ul>
-                  <li>
-                    Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. 
-                  </li>
-                  <li>
-                    Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
-                  </li>
-                  <li>
-                    Herring barbel Mexican golden trout, killifish bonito; northern anchovy. 
-                  </li>
-                  <li>
-                    Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
-                  </li>
-              </ul>
-          </section>
-          <section>
+            <!-- Removed from previous article and added as a section. This part doesn't contain content, -->
               <h2>
                   Contact to learn more
               </h2>
@@ -76,9 +76,9 @@
               </form>
           </section>
       
-          <footer> &copy; Lone Starfish.
+        <footer> &copy; Lone Starfish.
         </footer>
-        </article>
+      </div>
       
   </body>
 </html>

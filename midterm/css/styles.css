@@ -61,13 +61,10 @@ body {
         max-width: 1024px;
         margin: 0 auto;
         background-color: #aad4cf;
-        font-family: "Arial", Calibri, 'Trebuchet MS', sans-serif;
-        
+        font-family: Arial, Calibri, 'Trebuchet MS', sans-serif;
 }
 
-article {
-    max-width: 1024px;
-    margin: 0 auto;
+.container {
     background-color: #D8E8E6;
 }
 
@@ -87,7 +84,6 @@ header p {
     
     max-width: 1024px;
     height: 320px;
-    margin: 0 auto;
     width: 100%;
     font-size: 3rem;
     text-align: center;
@@ -108,24 +104,26 @@ nav ul {
 
 nav li{
     
-    margin: 0 auto;
     display: inline;
-    
+
 }
 
 nav li a{
     display: inline-block;
+    /* border-box is used to prevent the padding from counting towards the height of the <a> element. The padding is necessary to position the text, but not necessary to lengthen the entire element. */
+    box-sizing: border-box;
     text-decoration: none;
     color:#000;
     font-size: 1.6rem;
     text-align: center;
+    /* 32.9% is to ensure they remain in three columns. 33% makes the third drop down. */
     width: 32.9%;
-   
+    height: 45px;
     padding-top: 10px;
     margin-top: 3px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
-
+/* This targets a .centrenav class which is located on only the second of three list items in the HTML, to get the vertical borders in the nav. Their height is controlled by the margins of the list element anchors, above. */
 .centrenav a {
     border-left: 1px black solid;
     border-right: 1px black solid;
@@ -137,28 +135,23 @@ nav li a{
 
 h1 {
     font-size: 2.2rem;
-    font-weight:500;
     margin: 10px;
 }
 
 h2 {
     font-size: 1.8rem;
-    font-weight:500;
     margin: 10px;
     padding: 10px 0;
 }
 
 h3 {
     font-size: 1.25rem;
-    font-weight:500;
     margin: 10px 0;
     padding: 10px 0;
 }
 
-
 p {
     font-size: 1rem;
-    font-weight: 500;
     line-height: 22px;
     margin: 22px 12px;
 }
