@@ -97,31 +97,41 @@ body {
             My code - header
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+/* Although efforts were made to keep this responsive, could have improved but out of scope. Media queries could add different images depending on browser size: https://imdac.github.io/modules/css/css-position/css-position-examples.html */
+
+header {
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+    /* height: 340px is required to have the text properly align using a percentage. However, without a height, the image would not distort. The headertext moving outside of the header was more distracting. */
+    height: 340px;
+}
 
 header img {
 
+/* This is the best of a bad situation. Although the image will distort, at least the header remains mostly consistent in smaller screen widths. */
+    height: 100%;
     width: 100%;
-    display: block;
     padding: 0;
-    max-width: 1024px;
 
 }
 
 .headertext {
-    
-    max-width: 1024px;
-    width: 100%;
+
+    position: absolute;
+    top: 58%;
     text-align: center;
+    width: 100%;
     color: #fff;
     font-size: 4rem;
-    line-height: 462px;
-    position: absolute;
 
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~
             My code - nav
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Unresponsive nav. Could have improved, but out of scope. https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
 
 nav ul {
 
@@ -144,7 +154,7 @@ nav li a {
     color:#000;
     font-size: 1.6rem;
     text-align: center;
-    /* 32.9% is to ensure they remain in three columns. 33% makes the third drop down. */
+    /* 32.9%: An unresponsive way to ensure the options remain in three columns. 33% makes the third drop down. */
     width: 32.9%;
     height: 45px;
     padding-top: 10px;
@@ -276,6 +286,11 @@ textarea {
     font-size: .75rem;
     border-width: 1px;
 
+}
+
+/* Stylistic decision. */
+.hover {
+    background-color: #aad4cf;
 }
 
 footer {
