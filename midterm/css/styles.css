@@ -100,11 +100,13 @@ body {
 /* Although efforts were made to keep this responsive, could have improved but out of scope. Media queries could add different images depending on browser size: https://imdac.github.io/modules/css/css-position/css-position-examples.html */
 
 header {
+
     position: relative;
     max-width: 1024px;
     margin: 0 auto;
     /* height: 340px is required to have the text properly align using a percentage. However, without a height, the image would not distort. The headertext moving outside of the header was more distracting. */
     height: 340px;
+    
 }
 
 header img {
