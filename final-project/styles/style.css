@@ -47,19 +47,152 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* BASICS
----------------------------------------------------- */
-@media screen and (min-width: 760px) {
 
+/* ---------------------------------------------
+Defaults
+---------------------------------------------------- */
 body {
-	font: 16px/1.8 sans-serif;
-	max-width: 1200px;
+	font: 16px;
 	margin: 0 auto;
-	padding: 0 1em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+h1 {
+	font-size: 3rem;
+	margin: 25px 0 25px 10px;
+}
+
+h2 {
+	font-size: 2rem;
+	margin: 25px 0 25px 10px;
+	
+}
+
+h3 {
+	font-size: 1.5rem;
+	margin: 25px 0 25px 10px;
+
+}
+
+h4 {
+	font-size: .8rem;
+	margin: 25px 0 25px 10px;
+	border-bottom: 2px solid #C68D00;
+
+}
+
+.button {
+	color:white;
+	background-color: #222222;
+	padding: 20px 20px;
+	border: none;
+	margin: 10px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+/* Defaults - header */
+header {
+	max-width: 1200px;
+}
+.logo {
+	background-color: #C68D00;
+}
+nav li {
+	text-align: center;
+	padding:10px;
+	color: #C68D00;
+	background-color: #222222;
+}
+
+nav li:first-child {
+	background-color: #C68D00;
+	color: #222222;
+}
+
+header form {
+	background-color: #222222;
+	display:flex;
+	padding: 10px;
+}
+
+header form input {
+	flex-grow: 1;
+}
+
+header form button {
+	display: inline-block;
+	background-color: #222222;
+	border: 1px solid #C68D00;
+	color: #C68D00;
 	}
 
-nav {c
-	display:grid;
+/* Defaults - banner */
+.banner {
+	position: relative;
+}
+
+.banner img {
+	width: 100%;
+}
+
+.overlay {
+	background-color: #22222288;
+	position: absolute;
+	top: 30%;
+	color: white;
+	max-width: 1200px;
+}
+
+.overlay .button {
+	color:#222222;
+	background-color: #C68D00;
+}
+
+/* rest of content*/
+
+.about-us {
+	background-color: #FBE7B3;
+	padding: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.indented div{
+	background-color: #FBE7B3;
+	margin: 10px;
+	
+}
+
+.indented div p {
+	padding: 0 10px;
+}
+
+
+
+.indented div img{
+	width:100%;
+}
+.vision {
+	background-image: url("../images/vision.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	padding: 10px;
+}
+
+.vision .button {
+	border: 1px solid #C68D00;
+}	
+
+
+@media screen and (min-width: 760px) {
+
+
+
+nav {
+	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 }
 
