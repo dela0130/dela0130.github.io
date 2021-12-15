@@ -103,7 +103,9 @@ p {
 	text-decoration: none;
 }
 
-/* Nav */
+/* ----------------------------------------------------
+Nav - mobile first
+----------------------------------------------------*/
 
 .logo {
 	background-color: #c78c06;
@@ -154,7 +156,9 @@ nav form input {
 		font-size: 1.5rem;
 	}
 
-/* Banner */
+/*----------------------------------------------------
+ Banner - mobile first 
+ ----------------------------------------------------*/
 .banner {
 	background-image: url(../images/main-banner.jpg);
 	background-position: bottom center;
@@ -174,16 +178,15 @@ nav form input {
 
 }
 
-/* .overlay h1, .overlay p{
-	/* margin: 10px;
-} */
+/* ----------------------------------------------------
+About Us - mobile first
+----------------------------------------------------*/
 
 .overlay .button {
 	color:#222222;
 	background-color: #c78c06;
 }
 
-/* rest of content*/
 
 .about-us {
 	
@@ -200,6 +203,10 @@ nav form input {
 }
 
 
+/* ----------------------------------------------------
+Services - mobile first
+----------------------------------------------------*/
+
 .services div {
 	width:100%;
 	background-color: #ffe6ac;
@@ -212,6 +219,10 @@ nav form input {
 	width:100%;
 }
 
+
+/* ----------------------------------------------------
+Vision bleed - mobile first
+----------------------------------------------------*/
 .vision {
 	background-image: url("../images/vision.jpg");
 	background-repeat:no-repeat;
@@ -224,6 +235,10 @@ nav form input {
 .vision .button {
 	border: 1px solid #c78c06;
 }	
+
+/* ----------------------------------------------------
+Team - mobile first
+----------------------------------------------------*/
 
 .team {
 	margin: 10px;
@@ -242,6 +257,10 @@ nav form input {
 .team img {
 	width: 100%;
 }
+
+/* ----------------------------------------------------
+Contact form - mobile first
+----------------------------------------------------*/
 
 .contact div form {
 	margin: 10px;
@@ -272,7 +291,9 @@ nav form input {
 	align-self: start;
 }
 
-/* Table */
+/* ----------------------------------------------------
+Table - mobile first
+----------------------------------------------------*/
 
 .hours {
 	margin: 10px;
@@ -294,7 +315,9 @@ th {
 	background-color: #ffe6ac;
 }
 
-/* location */
+/* ----------------------------------------------------
+Location - mobile first
+----------------------------------------------------*/
 
 .location {
 	margin: 10px;
@@ -304,6 +327,10 @@ th {
 	width: 100%;
 }
 
+/* ----------------------------------------------------
+Footer - mobile first
+----------------------------------------------------*/
+
 footer {
 	background-color: #222222;
 	color: #c78c06;
@@ -312,7 +339,9 @@ footer {
 @media screen and (min-width: 760px) {
 
 
-	/* nav */
+/* ----------------------------------------------------
+Nav - larger screen
+----------------------------------------------------*/
 	.nav-container { 
 		display: flex;
 		flex-direction: row;
@@ -346,13 +375,17 @@ footer {
 		width: 200px;
 	}
 
-	/* banner */
+/* ----------------------------------------------------
+Banner - larger screen
+----------------------------------------------------*/
 
 	.overlay {
 		max-width: 1200px;
 	}
 
-	/* about */
+/* ----------------------------------------------------
+About - larger screen
+----------------------------------------------------*/
 
 	.about-container{
 		max-width: 1200px;
@@ -366,7 +399,9 @@ footer {
 		line-height: 1.2;
 	}
 
-	/* services */
+/* ----------------------------------------------------
+Services - larger screen
+----------------------------------------------------*/
 
 	.services-container {
 		max-width: 1200px;
@@ -393,38 +428,32 @@ footer {
 	.services div:nth-child(1) {
 		grid-column: 1 / span 3;
 		grid-row: 1;
-
-
 	}
 
 	.services div:nth-child(2) {
-
 	grid-column: 4 / span 3;
 	grid-row: 1;
-
 	}
 
 	.services div:nth-child(3) {
-
 		grid-column: 1 / span 2;
 		grid-row: 2;
-	
 	}
+
 	.services div:nth-child(4) {
 
 		grid-column: 3 / span 2;
 		grid-row: 2;
-	
 	}
-	.services div:nth-child(5) {
 
+	.services div:nth-child(5) {
 		grid-column: 5 / span 2;
 		grid-row: 2;
-	
-
 	}
 
-	/* vision */
+/* ----------------------------------------------------
+Vision - larger screen
+----------------------------------------------------*/
 	.vision {
 		margin-top: 20px;
 	}
@@ -433,7 +462,9 @@ footer {
 		margin: 0 auto;
 	}
 
-	/* team */
+/* ----------------------------------------------------
+Team - larger screen
+----------------------------------------------------*/
 
 	.team-container {
 		max-width: 1200px;
@@ -450,7 +481,6 @@ footer {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
-
 	}
 
 	.team div {
@@ -475,7 +505,9 @@ footer {
 		grid-row: 2 / 2;
 	}
 
-	/* contact */
+/* ----------------------------------------------------
+Contact - larger screen
+----------------------------------------------------*/
 	.contact-container {
 		max-width: 1200px;
 		margin: 0 auto;
@@ -502,6 +534,10 @@ footer {
 		grid-column: 2 / 2;
 		grid-row: 1 / 1;
 	}
+
+	/* ----------------------------------------------------
+Contact - larger screen
+----------------------------------------------------*/
 	
 	.footer-content {
 		max-width: 1200px;
